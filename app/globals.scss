@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+@layer base {
+    body {
+        @apply min-h-screen bg-gray-900 text-white;
+        font-family: 'Nunito', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-semibold;
+    }
+}
+
+@layer components {
+    .gradient {
+        // background: linear-gradient(90deg, #c084fc, #db2777);
+        @apply bg-gradient-to-br from-primary-500 to-secondary-600;
+    }
+
+    .btn {
+        @apply rounded-md bg-gray-700 px-6 py-2 text-base font-medium inline-flex items-center justify-center gap-3 transition;
+
+        &:hover{
+            @apply scale-105;
+        }
+
+        &-gradient {
+            @extend .gradient;
+            @extend .btn;
+            @apply rounded-full px-8 font-semibold;
+
+
+        }
+    }
+
+    .text-gradient {
+        @extend .gradient;
+        @apply bg-clip-text text-transparent;
+    }
+}
