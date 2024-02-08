@@ -21,10 +21,10 @@
     }
 
     section{
-        @apply max-w-screen-xl mx-auto;
+        @apply max-w-screen-xl mx-auto my-6 mt-10 md:mb-20;
 
         &>h3{
-            @apply text-3xl md:text-5xl font-semibold md:font-bold mb-8;
+            @apply text-3xl md:text-4xl font-semibold md:font-bold mb-8 text-center;
         }
     }
 }

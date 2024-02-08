@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <section className="my-12 text-center">
+        <section className="text-center">
             <h3>About Me</h3>
 
             <div className="grid md:grid-cols-[2fr_3fr] gap-8 md:gap-16">
