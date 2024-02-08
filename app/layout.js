@@ -1,5 +1,6 @@
 import NavBar from '@/components/NabBar';
 import './globals.scss';
+import Footer from '@/components/Footer';
 
 export const metadata = {
     title: 'Create Next App',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
             <body>
                 <NavBar />
                 <main className="px-4">{children}</main>
+                <Footer />
             </body>
         </html>
     );
