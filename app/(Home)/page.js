@@ -4,12 +4,12 @@ import Skills from './Skills';
 
 const page = () => {
     return (
-        <div>
+        <main>
             <Hero />
             <About />
             <Skills />
             <br />
-        </div>
+        </main>
     );
 };
 

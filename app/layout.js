@@ -1,4 +1,4 @@
-import NavBar from '@/components/NabBar';
+import NavBar from '@/components/NavBar';
 import './globals.scss';
 import Footer from '@/components/Footer';
 
@@ -10,9 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body>
+            <head>
+                <meta name="color-scheme" content="dark" />
+            </head>
+            <body className='dark'>
                 <NavBar />
-                <main className="px-4">{children}</main>
+                <div className="px-4">{children}</div>
                 <Footer />
             </body>
         </html>

@@ -20,6 +20,19 @@
         @apply font-semibold;
     }
 
+    main{
+        @apply min-h-screen;
+
+        &>h1{
+            @extend .text-gradient;
+            @apply text-4xl md:text-5xl font-bold text-center mb-2 mt-28;
+
+            &+h3{
+                @apply text-gray-300 text-base md:text-xl font-semibold mb-2 text-center;
+            }
+        }
+    }
+
     section{
         @apply max-w-screen-xl mx-auto my-6 mt-10 md:mb-20;
 
@@ -31,23 +44,20 @@
 
 @layer components {
     .gradient {
-        // background: linear-gradient(90deg, #c084fc, #db2777);
         @apply bg-gradient-to-br from-primary-500 to-secondary-600;
     }
 
     .btn {
-        @apply rounded-full bg-gray-700 px-6 py-2 text-base font-medium inline-flex items-center justify-center gap-3 transition;
+        @apply rounded-full bg-gray-700 px-6 py-2 text-base md:text-xl font-medium inline-flex items-center justify-center gap-3 transition;
 
         &:hover{
-            @apply scale-110;
+            @apply scale-105 md:scale-110;
         }
 
         &-gradient {
             @extend .gradient;
             @extend .btn;
             @apply rounded-full px-8 font-semibold;
-
-
         }
     }
 

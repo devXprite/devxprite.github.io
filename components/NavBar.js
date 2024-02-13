@@ -14,7 +14,7 @@ const NavLinks = [
 const NavBar = () => {
     return (
         <header>
-            <nav className="fixed left-1/2 top-5 flex w-11/12 -translate-x-1/2 flex-wrap justify-center space-x-4 rounded-full border border-gray-600 px-6 py-2 text-gray-300 backdrop-blur-lg md:w-max">
+            <nav className="fixed left-1/2 z-20 top-5 flex w-11/12 -translate-x-1/2 flex-wrap justify-center space-x-4 rounded-full border border-gray-600 px-6 py-2 text-gray-300 backdrop-blur-lg md:w-max">
                 {NavLinks.map(({ href, label }) => (
                     <Link key={href} href={href} className="hover:text-gray-100">
                         {label}

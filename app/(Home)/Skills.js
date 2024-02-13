@@ -31,7 +31,7 @@ const Skills = () => {
 
             <div className="mx-auto flex max-w-screen-md flex-wrap justify-center gap-2.5 md:gap-3">
                 {skills.map(skill => (
-                    <p className=" rounded-lg bg-gray-700 px-6 py-2 md:py-2.5 shadow-md shadow-black/75 transition hover:scale-110 hover:bg-primary-600 hover:shadow-lg hover:shadow-black md:text-lg">
+                    <p className=" rounded-lg text-sm font-medium bg-gray-700 px-3 py-2 md:px-6 md:py-2.5 shadow-md shadow-black/75 transition hover:scale-110 hover:bg-primary-600 hover:shadow-lg hover:shadow-black md:text-lg">
                         {skill}
                     </p>
                 ))}
