@@ -1,0 +1,51 @@
+import { FaBroadcastTower, FaGithub } from 'react-icons/fa';
+
+const ProjectCard = props => {
+    return (
+        <div
+            key={props.name}
+            className="group relative overflow-hidden rounded-md border border-gray-600 bg-gray-800 p-4 shadow-md shadow-black/75 transition hover:scale-105 hover:shadow-xl hover:shadow-black md:p-6"
+        >
+            <div className="md:w-9/12">
+                <h2 className="text-2xl">{props.name}</h2>
+
+                {/* <div className="mb-1 text-gray-300 text-sm">
+                                <p className="flex items-center gap-2">
+                                    <FaStar /> <span>{project.stargazers_count}</span>
+                                </p>
+                            </div> */}
+
+                <p className="text-sm text-gray-300 md:text-base">{props.description}</p>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                    {props?.topics?.map(topic => (
+                        <p className="rounded-md bg-gray-600 px-2 py-1 text-xs text-gray-200" key={topic}>
+                            {topic}
+                        </p>
+                    ))}
+                </div>
+
+                <div className="mt-6 flex gap-3">
+                    <button type="button" className="btn bg-gray-100 text-sm text-gray-900 md:text-base">
+                        <FaBroadcastTower />
+                        <span>Live</span>
+                    </button>
+
+                    <button className="btn text-sm md:text-base">
+                        <span>GitHub</span>
+                        <FaGithub />
+                    </button>
+                </div>
+            </div>
+
+            {props.thumbnail && (
+                <img
+                    src={props.thumbnail}
+                    className="absolute -bottom-4 -right-[12%] hidden h-48 -rotate-12 rounded-xl bg-gray-700 shadow-lg shadow-black/75 transition group-hover:-rotate-3 group-hover:scale-125 group-hover:shadow-2xl group-hover:shadow-black md:block"
+                />
+            )}
+        </div>
+    );
+};
+
+export default ProjectCard;

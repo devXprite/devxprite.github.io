@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { BsMouse } from 'react-icons/bs';
 
 import {
@@ -99,9 +100,12 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="absolute bottom-6 flex animate-bounce items-center gap-2 font-semibold text-gray-300 md:text-xl">
+            <div className="absolute bottom-6 flex animate-bounce items-center font-semibold text-gray-300 md:text-xl">
+                
+                <Link href='#about' className='flex gap-2'>
                 <BsMouse className="text-2xl text-primary-500" />
                 Scroll Down
+                </Link>
             </div>
         </section>
     );

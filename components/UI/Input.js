@@ -2,7 +2,7 @@ import React from 'react';
 
 const Input = ({ label, name, placeholder, type = 'text', ...props }) => {
     const InputEl = () => {
-        const className = 'bg-transparent md:py-1 text-base outline-none md:text-lg';
+        const className = 'bg-transparent md:py-1 text-base outline-none md:text-lg w-full';
 
         if (type === 'textarea') {
             return (

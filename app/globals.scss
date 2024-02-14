@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 @layer base {
     body {
         @apply min-h-screen bg-gray-900 text-gray-100;
@@ -20,24 +24,24 @@
         @apply font-semibold;
     }
 
-    main{
+    main {
         @apply min-h-screen;
 
-        &>h1{
+        & > h1 {
             @extend .text-gradient;
-            @apply text-4xl md:text-5xl font-bold text-center mb-2 mt-28;
+            @apply mb-2 mt-28 text-center text-4xl font-bold md:text-5xl;
 
-            &+h3{
-                @apply text-gray-300 text-base md:text-xl font-semibold mb-2 text-center;
+            & + h3 {
+                @apply mb-2 text-center text-base font-semibold text-gray-300 md:text-2xl;
             }
         }
     }
 
-    section{
-        @apply max-w-screen-xl mx-auto my-6 mt-10 md:mb-20;
+    section {
+        @apply mx-auto my-6 mt-10 max-w-screen-xl md:mb-20;
 
-        &>h3{
-            @apply text-3xl md:text-4xl font-semibold md:font-bold mb-8 text-center;
+        & > h3 {
+            @apply mb-8 text-center text-3xl font-semibold md:text-4xl md:font-bold;
         }
     }
 }
@@ -48,9 +52,9 @@
     }
 
     .btn {
-        @apply rounded-full bg-gray-700 px-6 py-2 text-base md:text-xl font-medium inline-flex items-center justify-center gap-3 transition;
+        @apply inline-flex items-center justify-center gap-3 rounded-full bg-gray-700 px-6 py-2 text-base font-medium transition md:text-xl;
 
-        &:hover{
+        &:hover {
             @apply scale-105 md:scale-110;
         }
 
@@ -67,6 +71,6 @@
     }
 }
 
-.link{
-    @apply text-blue-500 font-medium hover:underline hover:text-primary-500;
+.link {
+    @apply font-medium text-blue-500 hover:text-primary-500 hover:underline;
 }
