@@ -38,7 +38,7 @@ const page = () => {
 
                     <button type="submit" className="btn-gradient w-max ml-auto mt-6">
                         <span>Send Message</span>
-                        <FaPaperPlane />
+                        <FaPaperPlane className='animate' />
                     </button>
                 </form>
             </section>

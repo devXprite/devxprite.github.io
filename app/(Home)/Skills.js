@@ -27,7 +27,7 @@ const Skills = () => {
 
     return (
         <section>
-            <h3>My Skills</h3>
+            <h3><span className="text-gradient">My Skills</span></h3>
 
             <div className="mx-auto flex max-w-screen-md flex-wrap justify-center gap-2.5 md:gap-3">
                 {skills.map(skill => (

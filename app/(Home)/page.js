@@ -1,5 +1,7 @@
 import About from './About';
+import Blogs from './Blogs';
 import Hero from './Hero';
+import Projects from './Projects';
 import Skills from './Skills';
 
 const page = () => {
@@ -8,6 +10,8 @@ const page = () => {
             <Hero />
             <About />
             <Skills />
+            <Projects />
+            <Blogs />
             <br />
         </main>
     );

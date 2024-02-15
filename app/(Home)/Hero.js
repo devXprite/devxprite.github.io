@@ -90,7 +90,7 @@ const Hero = () => {
                 <div className="mt-16 flex flex-col justify-center gap-4 md:flex-row md:gap-12">
                     <button type="button" className="btn-gradient px-10 md:text-xl">
                         <span>Contact Me</span>
-                        <FaPaperPlane />
+                        <FaPaperPlane className='animate' />
                     </button>
 
                     <button type="button" className="btn px-10 md:text-xl">

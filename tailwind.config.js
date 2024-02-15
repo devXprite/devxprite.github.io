@@ -14,7 +14,7 @@ module.exports = {
             colors: {
                 primary: { ...colors.purple },
                 secondary: { ...colors.pink },
-                gray: { ...colors.zinc },
+                gray: { ...colors.neutral },
             },
         },
     },

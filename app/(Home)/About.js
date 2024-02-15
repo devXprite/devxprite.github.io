@@ -1,12 +1,17 @@
 const About = () => {
     return (
         <section className="text-center" id="about">
-            <h3>About Me</h3>
+            <h3>
+                <span className="text-gradient">About Me</span>
+            </h3>
 
             <div className="grid gap-8 md:grid-cols-[2fr_3fr] md:gap-16">
                 <div className="grid grid-cols-2 items-center gap-4 md:gap-6">
                     {[0, 1, 2, 4].map(e => (
-                        <div key={e} className="flex h-full items-center justify-center rounded-xl border-gray-700 bg-gradient-to-br from-gray-700 to-gray-900 border-2 bg-gray-800 p-3">
+                        <div
+                            key={e}
+                            className="flex h-full items-center justify-center rounded-md border-2 border-gray-700 bg-gray-800 bg-gradient-to-br from-gray-700 to-gray-900 p-3"
+                        >
                             <div>
                                 <h4 className="text-2xl font-bold md:text-4xl">10+</h4>
                                 <h5 className="text-xl md:text-2xl">Projects</h5>
