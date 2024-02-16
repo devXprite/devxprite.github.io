@@ -6,14 +6,18 @@ import { MdArrowOutward } from 'react-icons/md';
 const Projects = () => {
     return (
         <section>
-            <h3><span className="text-gradient">My Projects</span></h3>
+            <h3>
+                <span className="text-gradient">My Projects</span>
+            </h3>
 
             <div className="mx-auto mt-8 grid max-w-screen-md gap-4 md:grid-cols-1 md:gap-8">
-                {projects.slice(0, 3).map(ProjectCard)}
+                {projects.slice(0, 3).map(project => (
+                    <ProjectCard key={project.name} {...project} />
+                ))}
 
-                <Link href={'/projects'} className="btn mx-auto text-center">
+                <Link data-aos="zoom-in-up" href={'/projects'} className="btn mx-auto text-center">
                     <span>View All Projects</span>
-                    <MdArrowOutward className='animate' />
+                    <MdArrowOutward className="animate" />
                 </Link>
             </div>
         </section>

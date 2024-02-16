@@ -13,7 +13,7 @@ const Blogs = () => {
             <div className="mx-auto mt-8 grid max-w-screen-md gap-4 md:grid-cols-1 md:gap-8">
                 {blogs.slice(0, 3).map(BlogCard)}
 
-                <Link href={'/blogs'} className="btn mx-auto text-center">
+                <Link href={'/blogs'} data-aos="zoom-in-up" className="btn mx-auto text-center">
                     <span>View All Blogs</span>
                     <MdArrowOutward className="animate" />
                 </Link>

@@ -21,10 +21,10 @@ const Input = ({ label, name, placeholder, type = 'text', ...props }) => {
     };
 
     return (
-        <div className="group inline-block rounded-md border border-gray-600 bg-gray-800 px-3 py-2 focus-within:border-2 focus-within:border-primary-500">
+        <div className="group inline-block rounded-md border border-gray-600 bg-gray-800 px-3 py-2 focus-within:border-2 focus-within:border-gray-300">
             <label
                 htmlFor={name}
-                className="block text-sm font-semibold text-gray-300 group-focus-within:text-primary-500 "
+                className="block text-sm font-semibold text-gray-300 group-focus-within:text-gray-50 "
             >
                 {label}
             </label>

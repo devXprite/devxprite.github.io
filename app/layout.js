@@ -1,6 +1,7 @@
 import NavBar from '@/components/NavBar';
 import './globals.scss';
 import Footer from '@/components/Footer';
+import { AOSInit } from '@/components/AOSInit';
 
 export const metadata = {
     title: 'Create Next App',
@@ -13,7 +14,8 @@ export default function RootLayout({ children }) {
             <head>
                 <meta name="color-scheme" content="dark" />
             </head>
-            <body className='dark'>
+            <body className="dark">
+                <AOSInit />
                 <NavBar />
                 <div className="px-4">{children}</div>
                 <Footer />

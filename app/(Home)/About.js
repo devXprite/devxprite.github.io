@@ -42,8 +42,8 @@ const About = () => {
                 </div>
             </div> */}
 
-            <div className="text-justify text-base md:text-center md:text-lg [&>p]:mb-6 max-w-4xl mx-auto text-gray-200">
-                <p>
+            <div className="mx-auto max-w-4xl text-justify text-base text-gray-200 md:text-center md:text-lg [&>p]:mb-6">
+                <p data-aos="zoom-in-up">
                     Hey there! My name is Prateek and I am currently a final year student with a huge interest in web
                     development. I have always been drawn to the world of coding and I am constantly looking for ways to
                     challenge myself and improve my skills. My experience in web development includes working with
@@ -51,13 +51,13 @@ const About = () => {
                     applications. I am particularly skilled in the MERN stack and have a strong understanding of its
                     components.
                 </p>
-                <p>
+                <p data-aos="zoom-in-up">
                     Apart from working on personal projects, I also love contributing to open source projects and
                     collaborating with other developers. I am always on the lookout for new opportunities to learn and
                     grow as a developer. Whether it's through challenging projects, workshops, or courses, I am always
                     eager to expand my knowledge and skills.
                 </p>
-                <p>
+                <p data-aos="zoom-in-up">
                     If you're interested in working together or just want to chat about all things web development, feel
                     free to connect with me.
                 </p>
