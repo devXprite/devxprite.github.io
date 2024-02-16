@@ -5,7 +5,7 @@ const About = () => {
                 <span className="text-gradient">About Me</span>
             </h3>
 
-            <div className="grid gap-8 md:grid-cols-[2fr_3fr] md:gap-16">
+            {/* <div className="grid gap-8 md:grid-cols-[2fr_3fr] md:gap-16">
                 <div className="grid grid-cols-2 items-center gap-4 md:gap-6">
                     {[0, 1, 2, 4].map(e => (
                         <div
@@ -40,9 +40,9 @@ const About = () => {
                         feel free to connect with me.
                     </p>
                 </div>
-            </div>
+            </div> */}
 
-            {/* <div className="text-justify text-base md:text-justify md:text-xl [&>p]:mb-6 max-w-screen-lg mx-auto">
+            <div className="text-justify text-base md:text-center md:text-lg [&>p]:mb-6 max-w-4xl mx-auto text-gray-200">
                 <p>
                     Hey there! My name is Prateek and I am currently a final year student with a huge interest in web
                     development. I have always been drawn to the world of coding and I am constantly looking for ways to
@@ -61,7 +61,7 @@ const About = () => {
                     If you're interested in working together or just want to chat about all things web development, feel
                     free to connect with me.
                 </p>
-            </div> */}
+            </div>
         </section>
     );
 };

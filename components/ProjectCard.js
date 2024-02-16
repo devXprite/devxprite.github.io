@@ -6,7 +6,7 @@ const ProjectCard = props => {
     return (
         <div
             key={props.name}
-            className="group relative overflow-hidden rounded-md border border-gray-600 bg-gray-800 p-4 shadow-md shadow-black/75 transition hover:scale-105 hover:shadow-xl hover:shadow-black md:p-6"
+            className="group relative overflow-hidden rounded-md border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 p-4 shadow-lg shadow-black/75 transition md:hover:scale-105 hover:shadow-xl hover:shadow-black md:p-6"
         >
             <div className="md:w-9/12">
                 <h2 className="text-xl md:text-2xl font-semibold">{props.name}</h2>

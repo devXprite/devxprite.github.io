@@ -1,22 +1,28 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const NavLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/blogs', label: 'Blogs' },
-    { href: '/exp', label: 'Experiance' },
-    { href: '/contact', label: 'Contact Me' },
+    { href: '/projects/', label: 'Projects' },
+    { href: '/blogs/', label: 'Blogs' },
+    { href: '/exp/', label: 'Experiance' },
+    { href: '/contact/', label: 'Contact Me' },
 ];
 
 const NavBar = () => {
+    const pathname = usePathname();
+
     return (
-        <header>
-            <nav className="fixed left-1/2 z-20 top-5 flex w-11/12 -translate-x-1/2 flex-wrap justify-center space-x-4 rounded-full border border-gray-600 px-6 py-2 text-gray-300 backdrop-blur-lg md:w-max">
+        <header className="fixed left-0 top-0 z-20 flex w-full items-center justify-center">
+            <nav className="flex flex-wrap justify-center space-x-1 md:border border-gray-700/75 bg-gray-800/70 p-1 text-gray-300 shadow-lg shadow-black/25 backdrop-blur-lg md:mt-4 md:w-max  md:rounded-full md:p-2">
                 {NavLinks.map(({ href, label }) => (
-                    <Link key={href} href={href} className="hover:text-gray-100">
+                    <Link
+                        key={href}
+                        href={href}
+                        className={`rounded-full py-1 font-semibold hover:text-gray-100 md:px-4 md:text-lg ${pathname == href ? 'bg-gray-700 px-5' : 'px-2'} `}
+                    >
                         {label}
                     </Link>
                 ))}

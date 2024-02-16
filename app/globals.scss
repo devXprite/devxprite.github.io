@@ -57,7 +57,7 @@ html {
         // trnalate 2nd element on hover
         &:hover {
             .animate {
-                @apply translate-x-1 -translate-y-1 transition;
+                @apply translate-x-0.5 -translate-y-0.5 transition;
             }
         }
 
