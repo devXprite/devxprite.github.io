@@ -10,15 +10,13 @@ const NavLinks = [
     { href: '/', label: 'Home' },
     { href: '/projects/', label: 'Projects' },
     { href: '/blogs/', label: 'Blogs' },
-    { href: '/exp/', label: 'Experiance' },
+    { href: '/experiance/', label: 'Experiance' },
     { href: '/contact/', label: 'Contact Me' },
 ];
 
 const NavBar = () => {
     const [isMenuOpen, setisMenuOpen] = useState(false);
     const pathname = usePathname();
-
-    // console.log(isMenuOpen);
 
     return (
         <>
@@ -50,6 +48,7 @@ const NavBar = () => {
                     <div className="m-8 flex flex-col gap-8  p-4 pt-12">
                         {NavLinks.map(nav => (
                             <motion.div
+                            key={nav.name}
                                 initial={{ opacity: 0 }}
                                 animate={
                                     isMenuOpen ?
