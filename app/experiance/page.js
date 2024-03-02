@@ -1,46 +1,9 @@
 'use client';
 
-import { FaAddressBook } from 'react-icons/fa';
+import experiances from '@/config/experiances';
+import { FaCalendar, FaCalendarAlt } from 'react-icons/fa';
 
 const page = () => {
-    const experiances = [
-        {
-            name: 'Title',
-            description:
-                'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quae magnam hic, vitae laboriosam natus ',
-            year: '2020-2021',
-            icon: <FaAddressBook />,
-        },
-        {
-            name: 'Title',
-            description:
-                'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quae magnam hic, vitae laboriosam natus',
-            year: '2020-2021',
-            icon: <FaAddressBook />,
-        },
-        {
-            name: 'Title',
-            description:
-                'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quae magnam hic, vitae laboriosam natus',
-            year: '2020-2021',
-            icon: <FaAddressBook />,
-        },
-        {
-            name: 'Title',
-            description:
-                'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quae magnam hic, vitae laboriosam natus',
-            year: '2020-2021',
-            icon: <FaAddressBook />,
-        },
-        {
-            name: 'Title',
-            description:
-                'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quae magnam hic, vitae laboriosam natus ',
-            year: '2020-2021',
-            icon: <FaAddressBook />,
-        },
-    ];
-
     return (
         <main>
             <h1>Experiance</h1>
@@ -53,21 +16,26 @@ const page = () => {
                     {experiances.map((experiance, i) => (
                         <div
                             key={i}
-                            className={`group relative ml-10 rounded-md bg-gray-700/75 p-4 md:p-6 md:w-[46%] md:odd:ml-auto md:even:ml-0`}
+                            className={`group relative ml-10 rounded-md bg-gray-700/75 p-4 md:w-[46%] md:p-6 md:odd:ml-auto md:even:ml-0`}
                         >
-                            <h2 className='text-xl md:text-2xl font-semibold' ><span  >{experiance.name}</span></h2>
-                            <p className='text-sm'>{experiance.description}</p>
-                            <p className='mt-2'>{experiance.year}</p>
+                            <h2 className="text-xl font-semibold md:text-2xl">
+                                <span>{experiance.name}</span>
+                            </h2>
+                            <p className="text-lg text-gray-300">{experiance.description}</p>
+                            <p className="mt-2 flex items-center gap-2 font-semibold">
+                                <FaCalendarAlt /> <span>{experiance.year}</span>
+                            </p>
 
                             <div className="absolute -left-[3.25rem] top-1/2 -translate-y-1/2 rounded-full bg-gray-50 md:left-auto  md:group-odd:-left-[14%] md:group-even:-right-[14%]">
-                                <p className="m-3.5 text-lg md:text-2xl text-black">{experiance.icon}</p>
+                                <p className="m-3.5 text-lg text-black md:text-2xl">{experiance.icon}</p>
                             </div>
                         </div>
                     ))}
                 </div>
             </section>
 
-            <br /><br />
+            <br />
+            <br />
         </main>
     );
 };

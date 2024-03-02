@@ -11,6 +11,7 @@ const NavLinks = [
     { href: '/projects/', label: 'Projects' },
     { href: '/blogs/', label: 'Blogs' },
     { href: '/experiance/', label: 'Experiance' },
+    { href: '/stats/', label: 'Stats' },
     { href: '/contact/', label: 'Contact Me' },
 ];
 
@@ -21,7 +22,7 @@ const NavBar = () => {
     return (
         <>
             <header className="fixed left-0 top-0 z-20 flex w-full items-center justify-center">
-                <nav className="mt-4 hidden w-max flex-wrap justify-center space-x-1 rounded-full border border-gray-700/75 bg-gray-800/70 p-2 text-gray-300 shadow-lg shadow-black/25  backdrop-blur-lg md:flex">
+                <nav className="mt-4 hidden w-max flex-wrap justify-center space-x-1 rounded-full border border-gray-700/75 bg-gray-800/70 p-2 text-gray-300 shadow-lg shadow-black/25  backdrop-blur-md md:flex">
                     {NavLinks.map(({ href, label }) => (
                         <Link
                             key={href}

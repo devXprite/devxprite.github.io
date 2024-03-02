@@ -5,7 +5,14 @@ export default [
         homepage: 'https://searchex.vercel.app',
         github: 'https://github.com/devXprite/SearchEx',
         topics: ['google-clone', 'scss', 'javascript', 'nextjs', 'reactjs', 'search-engine'],
-        thumbnail: 'https://github.com/devXprite/SearchEx/raw/main/public/images/page_1.png',
+        thumbnail: '/images/projects/searchex.png',
+    },{
+        name: 'WhatsApp UI Clone',
+        description: 'WhatsApp UI Clone using ReactJs & TailwindCSS',
+        homepage: 'https://whatsapp-ui-app.vercel.app/',
+        codepen: 'https://codepen.io/devXprite/pen/xxdMvXN',
+        thumbnail: '/images/projects/whatsapp-ui-app.png',
+        topics: ['reactjs', 'tailwindcss'],
     },
     {
         name: 'Infoooze',
@@ -14,7 +21,7 @@ export default [
         homepage: 'https://infoooze.js.org',
         github: 'https://github.com/devXprite/infoooze',
         topics: ['nodejs', 'npm-package', 'osint', 'cli'],
-        thumbnail: 'https://infoooze.js.org/images/screenshot1.png',
+        thumbnail: '/images/projects/infoooze.png',
     },
     {
         name: 'MoviesPrix',
@@ -23,6 +30,7 @@ export default [
         homepage: 'https://moviesprix.vercel.app',
         github: 'https://github.com/devXprite/MoviesPrix',
         topics: ['javascript', 'movies-app', 'nextjs', 'reactjs', 'scss', 'tmdb-api'],
+        thumbnail: '/images/projects/moviesprix.png',
     },
     {
         name: 'Chat World',
@@ -31,6 +39,7 @@ export default [
         homepage: 'https://chatworld.vercel.app/',
         github: 'https://github.com/devXprite/Chat-World',
         topics: ['chatapp', 'css', 'firebase', 'html', 'javascript', 'jquery'],
+        thumbnail: '/images/projects/chatworld.png',
     },
     {
         name: 'Httpfy',
@@ -46,5 +55,6 @@ export default [
         homepage: 'https://gitvio.vercel.app',
         github: 'https://github.com/devXprite/GitVio',
         topics: ['github-stats', 'javascript', 'less', 'nodejs', 'pug'],
+        thumbnail: '/images/projects/gitvio.png',
     },
 ];

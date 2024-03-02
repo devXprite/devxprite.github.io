@@ -76,6 +76,10 @@ html {
         @extend .gradient;
         @apply bg-clip-text text-transparent;
     }
+
+    .card{
+        @apply rounded-md border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 p-4 shadow-lg shadow-black/75 transition hover:shadow-xl hover:shadow-black md:p-6 hover:md:scale-105;
+    }
 }
 
 .link {
