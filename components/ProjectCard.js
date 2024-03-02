@@ -55,7 +55,7 @@ const ProjectCard = props => {
             {props.thumbnail && (
                 <img
                     src={props.thumbnail}
-                    className="absolute -bottom-4  left-[68%] hidden h-48 -rotate-12 rounded-xl bg-gray-700 shadow-lg shadow-black/75 transition group-hover:-rotate-3 group-hover:scale-125 group-hover:shadow-2xl group-hover:shadow-black md:block"
+                    className="absolute top-2  left-[70%] hidden h-48 -rotate-12 rounded-xl bg-gray-700 shadow-lg shadow-black/75 transition group-hover:-rotate-3 group-hover:scale-125 group-hover:shadow-2xl group-hover:shadow-black md:block"
                 />
             )}
         </div>
