@@ -5,8 +5,12 @@ import { FaBroadcastTower, FaCodepen, FaGithub } from 'react-icons/fa';
 
 const ProjectCard = props => {
     return (
-        <div key={props.name} className="card group relative overflow-hidden" data-aos="zoom-in-up">
-            <div className="md:w-9/12">
+        <div
+            key={props.name}
+            className="card group relative flex justify-between gap-2 overflow-hidden"
+            data-aos="zoom-in-up"
+        >
+            <div className="">
                 <h2 className="text-xl font-semibold md:text-2xl">{props.name}</h2>
                 <p className="text-sm font-medium text-gray-300 md:text-base">{props.description}</p>
 
@@ -55,7 +59,7 @@ const ProjectCard = props => {
             {props.thumbnail && (
                 <img
                     src={props.thumbnail}
-                    className="absolute top-2  left-[70%] hidden h-48 -rotate-12 rounded-xl bg-gray-700 shadow-lg shadow-black/75 transition group-hover:-rotate-3 group-hover:scale-125 group-hover:shadow-2xl group-hover:shadow-black md:block"
+                    className=" hidden border border-gray-700/75 h-40  w-auto rounded-xl bg-gray-700 shadow-md shadow-black/75 transition group-hover:-rotate-3 group-hover:scale-125 group-hover:shadow-xl group-hover:shadow-black md:block"
                 />
             )}
         </div>

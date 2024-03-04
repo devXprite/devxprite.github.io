@@ -29,7 +29,7 @@ export default [
         icon: <FaNpm />,
     },
     {
-        href: 'https://devxprite.medium.com',
+        href: 'https://medium.com/@devxprite',
         icon: <FaMedium />,
     },
     {

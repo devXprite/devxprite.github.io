@@ -5,7 +5,6 @@ import { BsMouse } from 'react-icons/bs';
 import { FaDownload, FaPaperPlane } from 'react-icons/fa';
 
 const Hero = () => {
-
     return (
         <section className="relative my-0 flex min-h-screen max-w-screen-lg items-center justify-center text-center">
             <div>
@@ -15,8 +14,8 @@ const Hero = () => {
                 </h1>
 
                 <p className="mt-6 text-sm text-gray-300 md:text-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos qui nemo aliquam autem reiciendis fuga
-                    minus tempore nostrum. Amet quibusdam optio nulla ipsum placeat mollitia!
+                    Welcome to my portfolio! I'm a dedicated full-stack developer with a strong expertise in web
+                    development. I specialize in building dynamic and intuitive web applications.
                 </p>
 
                 <div className="mt-10 flex flex-wrap justify-center gap-5 text-2xl text-gray-300 md:gap-8 md:text-4xl">
